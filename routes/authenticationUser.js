@@ -11,10 +11,6 @@ module.exports = (router, session) => {
 
     mongoose.set('debug', true);
 
-    router.get('/', (req, res) => {
-        include('../index.html');
-    })
-
 
     /* ==============
       Create Token
