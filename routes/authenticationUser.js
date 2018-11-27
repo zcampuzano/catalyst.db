@@ -12,7 +12,7 @@ module.exports = (router, session) => {
     mongoose.set('debug', true);
 
     router.get('/', (req, res) => {
-        readfile('../www/html/index.html');
+        res.readfile('../www/html/index.html');
     })
 
 
