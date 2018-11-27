@@ -33,7 +33,8 @@ app.use(cors());
 app.use('/authentication', authentication);
 app.use('/sportAuthentication', sportAuthentication);
 app.get('/', function (req, res) {
-    res.send('./index.html')
+    //res.send('./index.html')
+    res.include('./index.html')
 });
 
 app.use(session({
