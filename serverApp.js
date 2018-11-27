@@ -32,7 +32,9 @@ app.use(methodOverride());
 app.use(cors());
 app.use('/authentication', authentication);
 app.use('/sportAuthentication', sportAuthentication);
-app.use('/', include('./index.html'));
+app.get('/', function (req, res) {
+    res.send('Hello World!')
+});
 
 app.use(session({
     secret: config.secret,
