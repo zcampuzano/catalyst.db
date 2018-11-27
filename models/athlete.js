@@ -28,7 +28,7 @@ let validName = (name) => {
         return false; // Return error
     } else {
         // Regular expression to test if username format is valid
-        const regExp = new RegExp(/^[a-zA-Z0-9]+$/);
+        const regExp = new RegExp(/^[a-zA-Z0-9 .-]+$/);
         return regExp.test(name); // Return regular expression test result (true or false)
     }
 };
@@ -44,7 +44,7 @@ const usernameValidators = [
     // Second username validator
     {
         validator: validName,
-        message: 'Name must not have any special characters'
+        message: 'Name must only enclude characters'
     }
 ];
 
