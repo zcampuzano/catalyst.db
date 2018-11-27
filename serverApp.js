@@ -12,7 +12,7 @@ const cors = require('cors');
 const config = require('./config/database');
 const authentication = require('./routes/authenticationUser')(router, session);
 const sportAuthentication = require('./routes/authenticationSport')(router, session);
-const index = require('./index.html');
+
 
 // Configuration
 //mongoose.Promise = global.Promise;
