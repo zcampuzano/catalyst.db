@@ -32,7 +32,6 @@ app.use(methodOverride());
 app.use(cors());
 app.use('/authentication', authentication);
 app.use('/sportAuthentication', sportAuthentication);
-app.use('/', index);
 
 app.use(session({
     secret: config.secret,
