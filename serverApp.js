@@ -32,9 +32,8 @@ app.use(methodOverride());
 app.use(cors());
 app.use('/authentication', authentication);
 app.use('/sportAuthentication', sportAuthentication);
-app.get('/', function (req, res) {
+app.get('/', function (req, res) {                              // get html splash page
     res.sendFile('./index.html', {root: __dirname })
-    //res.include('./index.html')
 });
 
 app.use(session({
