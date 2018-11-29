@@ -7,7 +7,7 @@ const Schema = mongoose.Schema; // Import Schema from Mongoose
 
 const organizationSchema = new Schema({
     organizationname: { type: String, required: true, unique: true},
-    location: { type: String, required: true, unique: true},
+    location: { type: String, required: true},
     seasons: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Season' }]
 });
 
