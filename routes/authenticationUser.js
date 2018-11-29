@@ -40,8 +40,10 @@ module.exports = (router, session) => {
             location: req.body.location
             // sport : req.body.sport
         });
+        
         Organization.createOrganization(organization, function (err) {
             if (err) {
+                console.log(err);
                 if (err.errors) {
                     // Check if validation error is in the email field
                     if (err.errors.organizationname) {
