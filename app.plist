@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>http://catalystdb.herokuapp.com/Catalyst.ipa</string>
+					<string>https://github.com/zcampuzano/catalyst.db/raw/master/Catalyst.ipa</string>
 				</dict>
 			</array>
 			<key>metadata</key>
