@@ -239,7 +239,7 @@ module.exports = (router, session) => {
             athlete : req.body.athlete,
             stat: {
                 PTA2 : 0, PTM2 : 0, PTA3 : 0, PTM3 : 0, AST : 0, BLK : 0, DRB : 0,
-                FTA : 0, FTM : 0, ORB : 0, PF : 0, STL : 0, TO : 0
+                FTA : 0, FTM : 0, ORB : 0, PF : 0, TECHF : 0, FF : 0, STL : 0, TO : 0, MIN : 0,
             },
         });
 
